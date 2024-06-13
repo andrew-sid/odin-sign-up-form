@@ -148,13 +148,18 @@ body {
 
 .form input:focus {
   outline: 2px solid lightblue;
-  border: none;
+  box-shadow: 0 0 4px 4px lightgray;
+}
+
+.form input:valid:focus{
+  outline: 2px solid lightblue;
+  box-shadow: 0 0 2px 2px lightgray;
 }
 
 .form input:invalid:focus {
-  outline: 2px solid red;
-  border: none;
+  outline: 2px solid lightblue;
 }
+
 
 .form__bottom {
   display: flex;
@@ -187,11 +192,11 @@ body {
 }
 
 .form__error-msg {
-  display: none;
+  opacity: 0;
   color: red;
   font-size: 0.8rem;
 }
 
 .show {
-  display: inline-block;
+  opacity: 1;
 }

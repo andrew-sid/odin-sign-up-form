@@ -41,32 +41,41 @@
             <div class="form__row">
               <div class="form__item">
                 <label for="first-name">first name</label>
-                <input type="text" id="first-name" name="first-name" pattern="" required/>
+                <input type="text" id="first-name" name="first-name" required />
               </div>
               <div class="form__item">
                 <label for="last-name">first name</label>
-                <input type="text" id="last-name" name="last-name" required/>
+                <input type="text" id="last-name" name="last-name" required />
               </div>
             </div>
             <div class="form__row">
               <div class="form__item">
                 <label for="email">email</label>
-                <input type="email" id="email" name="email" required/>
+                <input type="email" id="email" name="email" required />
               </div>
               <div class="form__item">
                 <label for="phone-number">phone number</label>
-                <input type="tel" id="phone-number" name="phone-number" required/>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  maxlength="12"
+                  title="123-123-1234"
+                  placeholder="123-456-7890"
+                  required
+                />
               </div>
             </div>
             <div class="form__row">
               <div class="form__item">
                 <label for="password">password</label>
-                <input type="password" id="password" name="password" required/>
+                <input type="password" id="password" name="password" required />
                 <span class="form__error-msg">*Passwords do not match</span>
               </div>
               <div class="form__item">
                 <label for="conf-password">confirm password</label>
-                <input type="password" id="conf-password" required/>
+                <input type="password" id="conf-password" required />
               </div>
             </div>
           </div>
