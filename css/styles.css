@@ -148,22 +148,26 @@ body {
 
 .form input:focus {
   outline: 2px solid lightblue;
-  box-shadow: 0 0 4px 4px lightgray;
+  box-shadow: 0 0 2px 2px lightgray;
 }
 
-.form input:valid:focus{
+.form input:required:focus {
   outline: 2px solid lightblue;
   box-shadow: 0 0 2px 2px lightgray;
 }
 
-.form input:invalid:focus {
+.form input:focus:valid {
   outline: 2px solid lightblue;
+  box-shadow: 0 0 2px 2px lightgray;
+}
+
+.form input:focus:invalid {
+  outline: 2px solid red;
 }
 
 .form input::placeholder {
   opacity: 0.6;
 }
-
 
 .form__bottom {
   display: flex;
