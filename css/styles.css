@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('../fonts/Norse-Bold.otf');
+  font-weight: 800;
+}
+
+:root {
+  /* fonts */
+  --def-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --norse-ff: 'Norse';
+  /* clrs */
+  --clr-white: #fff;
+  ---clr-dark-white: #adadad;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--def-ff);
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../img/back-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.left-side__logo {
+  margin-top: 200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 40%);
+}
+
+.logo__img {
+  width: 100px;
+  height: auto;
+}
+
+.logo__text{
+  font-family: var(--norse-ff, --def-ff);
+  color: var(--clr-white);
+  font-size: 10rem;
+}
+
+.left-side__copyright {
+  margin: auto 0 20px 0;
+  color: var(---clr-dark-white);
+}
+
+.left-side__copyright a{
+  font-size: 0.8rem;
+  color: inherit;
+}
+
+.right-side {
+  flex: 2;
+}
+
