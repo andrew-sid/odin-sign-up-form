@@ -138,11 +138,12 @@ body {
 .form input {
   width: 300px;
   height: 30px;
-  border: 1px solid lightgray;
+  outline: 1px solid lightgray;
   border-radius: 5px;
   padding: 0 5px;
   font-size: 1rem;
   font-weight: 500;
+  border: none;
 }
 
 .form input:focus {
@@ -150,7 +151,7 @@ body {
   border: none;
 }
 
-.form input:invalid {
+.form input:invalid:focus {
   outline: 2px solid red;
   border: none;
 }
@@ -183,4 +184,14 @@ body {
 .form__loginText a {
   color: var(---clr-main-theme);
   text-decoration: none;
+}
+
+.form__error-msg {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.show {
+  display: inline-block;
 }
