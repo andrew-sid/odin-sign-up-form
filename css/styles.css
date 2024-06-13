@@ -160,6 +160,10 @@ body {
   outline: 2px solid lightblue;
 }
 
+.form input::placeholder {
+  opacity: 0.6;
+}
+
 
 .form__bottom {
   display: flex;
