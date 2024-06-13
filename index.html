@@ -10,7 +10,7 @@
   <body>
     <div class="left-side">
       <div class="left-side__logo logo">
-        <img class="logo__img" src="./img/odin-logo.png" alt="The Odin Project"  />
+        <img class="logo__img" src="./img/odin-logo.png" alt="The Odin Project" />
         <span class="logo__text">ODIN</span>
       </div>
       <p class="left-side__copyright">
@@ -28,7 +28,56 @@
       </p>
     </div>
     <div class="right-side">
-      <h1>Just text</h1>
+      <p class="right-side__text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem porro aperiam vitae
+        labore laborum facere dolores inventore. Illo recusandae voluptatem quisquam beatae, ea unde
+        nobis. Mollitia consequatur accusamus eius non.
+      </p>
+
+      <form class="right-side__form form" action="" method="post">
+        <fieldset class="form__fieldset">
+          <div class="form__rows">
+            <p class="form__text">Let`s do this!</p>
+            <div class="form__row">
+              <div class="form__item">
+                <label for="first-name">first name</label>
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+              <div class="form__item">
+                <label for="last-name">first name</label>
+                <input type="text" id="last-name" name="last-name" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__item">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form__item">
+                <label for="phone-number">phone number</label>
+                <input type="tel" id="phone-number" name="phone-number" />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__item">
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" />
+              </div>
+              <div class="form__item">
+                <label for="conf-password">confirm password</label>
+                <input type="password" id="conf-password" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__bottom">
+          <button class="form__sign-upBtn">Create Account</button>
+          <p class="form__loginText">
+            Already have account?
+            <a href="#">Log in</a>
+          </p>
+        </div>
+      </form>
     </div>
   </body>
 </html>

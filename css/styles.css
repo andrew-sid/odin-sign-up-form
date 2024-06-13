@@ -12,6 +12,9 @@
   /* clrs */
   --clr-white: #fff;
   ---clr-dark-white: #e2dcdc;
+  ---clr-main-theme: rgb(58, 99, 58); 
+  /* margins */
+  --left-indent: 50px;
 }
 
 * {
@@ -30,6 +33,10 @@ body {
   display: flex;
   justify-content: flex-start;
   height: 100vh;
+}
+
+.container {
+  margin-left: 50px;
 }
 
 .left-side {
@@ -63,7 +70,7 @@ body {
   height: auto;
 }
 
-.logo__text{
+.logo__text {
   font-family: var(--norse-ff, --def-ff);
   color: var(--clr-white);
   font-size: 7rem;
@@ -76,7 +83,7 @@ body {
   opacity: 0.7;
 }
 
-.left-side__copyright a{
+.left-side__copyright a {
   color: inherit;
 }
 
@@ -85,3 +92,95 @@ body {
   background-color: var(---clr-dark-white);
 }
 
+.right-side__text {
+  margin: 100px 0 50px var(--left-indent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 30px 0 30px var(--left-indent);
+  background-color: var(--clr-white);
+  box-shadow: 0 4px 7px -2px gray;
+  margin-bottom: 30px;
+}
+
+.form__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form__rows {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.form input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form input:focus {
+  outline: 2px solid lightblue;
+  border: none;
+}
+
+.form input:invalid {
+  outline: 2px solid red;
+  border: none;
+}
+
+.form__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: var(--left-indent);
+}
+
+.form__bottom button {
+  align-self: flex-start;
+  border: none;
+  background-color: var(---clr-main-theme);
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 15px 55px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__loginText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.form__loginText a {
+  
+  color:var(---clr-main-theme);
+  text-decoration: none;
+}
