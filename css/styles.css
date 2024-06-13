@@ -11,7 +11,7 @@
   --norse-ff: 'Norse';
   /* clrs */
   --clr-white: #fff;
-  ---clr-dark-white: #adadad;
+  ---clr-dark-white: #e2dcdc;
 }
 
 * {
@@ -69,14 +69,16 @@ body {
 .left-side__copyright {
   margin: auto 0 20px 0;
   color: var(---clr-dark-white);
+  font-size: 0.6rem;
+  opacity: 0.7;
 }
 
 .left-side__copyright a{
-  font-size: 0.8rem;
   color: inherit;
 }
 
 .right-side {
   flex: 2;
+  background-color: var(---clr-dark-white);
 }
 
